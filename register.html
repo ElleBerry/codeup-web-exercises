@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>New Account</title>
+    </head>
+
+    <body>
+
+        <form method="POST" action="https://request-inspector.glitch.me">
+
+            <p>
+            <label for="username">
+                Username
+                <input type="text" name="username" id="username" autofocus required>
+            </label>
+            </p>
+
+            <p>
+            <label for="email">
+                Email
+                <input type="email" name="email" id="email" required>
+            </label>
+            </p>
+
+            <p>
+            <label for="password">
+                Password
+                <input type="password" name="password" id="password" required>
+            </label>
+
+            <label for="confirm_password">
+                Confirm Password
+                <input type="password" name="confirm_password" id="confirm_password" required>
+            </label>
+            </p>
+
+            <p>
+                <label for="newsletter">
+                    Sign me up to the newsletter
+                    <input type="checkbox" name="newsletter" id="newsletter" checked>
+                </label>
+            </p>
+
+            <button type="submit">Create New Account</button>
+
+        </form>
+
+    </body>
+</html>

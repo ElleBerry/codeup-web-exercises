@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Propery Search</title>
+
+    <body>
+    <form method="POST" action="https://request-inspector.glitch.me">
+
+            <h1>Property Search</h1>
+
+        <h2>Property Type</h2>
+
+        <label for="apartment">
+            Apartment
+            <input type="checkbox" name="property_type" value="" id="apartment">
+        </label>
+
+        <label for="house">
+            House
+            <input type="checkbox" name="property_type" id="house">
+        </label>
+
+        <label for="condo">
+            Condo
+            <input type="checkbox" name="condo" id="condo">
+        </label>
+
+        <label for="land">
+            Land
+            <input type="checkbox" name="land" id="land">
+        </label>
+
+        <label for="commercial">
+            Commercial
+            <input type="checkbox" name="commercial" id="commercial">
+        </label>
+
+        <p>
+
+        <label for="min_price">
+            Min Price
+            <input type="text" name="min_price" id="min_price">
+        </label>
+
+        <label for="max_price">
+            Max Price
+            <input types="text" name="max_price" id="max_price">
+        </label>
+
+        </p>
+
+        <label for="zipcode">
+            Zipcode
+            <input type="text" name="zipcode" id="zipcode">
+        </label>
+
+        <p>
+
+        <label for="rent">
+            Rent
+            <input type="checkbox" name="rent" id="rent">
+        </label>
+
+        <label for="buy">
+            Buy
+            <input type="checkbox" name="buy" id="buy">
+        </label>
+
+        </p>
+
+        <h2>Size</h2>
+
+        <label for="square_footage">
+            Square Footage
+            <input type="text" name="square_footage" id="square_footage">
+        </label>
+
+        <p>
+
+        <label for="bedrooms">
+            Number of Bedrooms
+            <input type="text" name="bedrooms" id="bedrooms">
+        </label>
+
+        <label for="bathrooms">
+            Number of Bathrooms
+            <input type="text" name="bathrooms" id="bathrooms">
+        </label>
+
+        </p>
+
+        <h2>Move-in Ready</h2>
+
+           <label for="yes">
+                Yes
+                <input type="radio" name="turn_key" value="yes" id="yes">
+            </label>
+
+            <label for="no">
+                No
+                <input type="radio" name="turn_key" value="no" id="no">
+            </label>
+
+        <p>
+
+        <button type="submit">Search now</button>
+
+        </p>
+
+    </form>
+
+    </body>
+</html>
