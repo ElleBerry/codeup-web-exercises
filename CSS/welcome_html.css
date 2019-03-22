@@ -1,9 +1,70 @@
-h1{
-    color: red;
-    text-align:
+main{
+    color: #ff5427;
+    text-align: center;
+}
+
+
+h2{
+    color: #068712;
+    text-decoration: underline overline lavender;
+    text-decoration-style: wavy;
+    text-align: center;
+
+}
+
+body{
+    background-image: url(../img/cactus.jpg);
+    background-size: contain;
+}
+
+li{
+    color: #ff5427;
+    text-align: center;
+    list-style-position: inside;
+    margin-right: 50px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 500px;
+    margin: 0px auto;
+}
+
+table tr, th, td {
+    color: #ff5427;
+    text-align: center;
+    border: solid lavender;
+    height: 50px;
+}
+
+div{
+    text-align: center;
+}
+img{
+    width: 47%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+a{
+    color: #364146;
+}
+
+a:hover{
+    color: #ff5427;
 }
 
 .fancy-header{
-    color: purple;
-    text-decoration: underline;
+    color: #ff5427;
+    text-decoration: underline lavender;
+    text-align: center;
 }
