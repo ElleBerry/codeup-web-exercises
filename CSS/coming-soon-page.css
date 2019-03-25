@@ -1,0 +1,31 @@
+html{
+    height: 100%;
+}
+body{
+    background-image: url(../img/forest.jpg);
+    background-size: cover;
+    font-family: Raleway, sans-serif;
+    color: white;
+    margin: 1em;
+    min-height: 100%;
+}
+article{
+    display: grid;
+    justify-content: center;
+    margin: 11em;
+}
+article>h1{
+    font-size: 5em;
+}
+article>h2{
+    text-align: center;
+}
+hr{
+    width: 25%;
+}
+footer>h3{
+    justify-content: flex-end;
+}
+a{
+    color: white;
+}
