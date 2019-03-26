@@ -69,11 +69,9 @@ footer>p{
         display: inline-block;
         list-style: none;
         padding: 1em;
-
     }
     ul{
-
         float: right;
-
+        margin-top: 25px;
     }
 }
