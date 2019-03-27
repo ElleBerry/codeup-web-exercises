@@ -1,18 +1,30 @@
-
+footer{
+    text-align: right;
+}
 h1{
-    background-color: rgba(255, 255, 255, 0.37);
     text-align: center;
-    color: rgba(0, 0, 0, 0.67);
+    color: rgba(0, 0, 0, 0.56);
+    background-color: rgba(255,255,255,0.42);
 }
-img{
-
-    width: 100%;
-    height: auto;
-}
+.button-style{
+     border: 1px solid black;
+ }
 .jumbotron{
-    padding: 0;
-    margin: 0;
+    background-image: url("../img/pizza.png");
 }
-.main-title{
-    background-color: blue;
+.badge-primary{
+    background-color: #828282;
+}
+.card-header{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.gray{
+    background-color: lightgray;
+    border-bottom: none;
+
+}
+.card{
+    margin-top: 1em;
 }
