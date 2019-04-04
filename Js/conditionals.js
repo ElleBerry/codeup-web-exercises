@@ -1,20 +1,47 @@
-"use strict";
+// function () {
+    "use strict";
 
-/**
- * TODO:
- * Write some JavaScript that uses a `confirm` dialog to ask the user if they
- * would like to enter a number. If they click 'Ok', prompt the user for a
- * number, then use 3 separate alerts to tell the user:
- *
- * - whether the number is even or odd
- * - what the number plus 100 is
- * - if the number is negative or positive
- *
- * if what the user enters is not a number, use an alert to tell them that, and
- * do *not* display any of the above information.
- *
- * Can you refactor your code to use functions?
- */
+    /**
+     * TODO:
+     * Write some JavaScript that uses a `confirm` dialog to ask the user if they
+     * would like to enter a number. If they click 'Ok', prompt the user for a
+     * number, then use 3 separate alerts to tell the user:
+     *
+     * - whether the number is even or odd
+     * - what the number plus 100 is
+     * - if the number is negative or positive
+     *
+     * if what the user enters is not a number, use an alert to tell them that, and
+     * do *not* display any of the above information.
+     *
+     * Can you refactor your code to use functions?
+     */
+
+    var num;
+    var answer;
+
+  answer = confirm("Would you like to enter a number?");
+
+    if(answer === true) {
+        num = prompt("Enter Number:");
+
+            if (num % 2 === 0) {
+                alert("This is an even number.");
+            } else {
+                alert("This is an odd number.");
+            }
+    }
+    else {
+            alert("Number Not Entered!");
+        }
+    if(num > 0){
+        alert("This number is positive!");
+    }
+    if(num < 0){
+        alert("This number is negative!");
+    }
+
+
 
 /* ########################################################################## */
 
@@ -43,11 +70,55 @@
 //                  will contain a different color everytime the page loads)
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+var color = prompt("Enter A Color");
+switch (color.toLowerCase()){
+    case "blue":
+        alert("blue is the color of the sky");
+        console.log("blue is the color of the sky");
+        break;
+    case "red":
+        alert("Strawberries are red");
+        console.log("Strawberries are red");
+        break;
+    case "orange":
+        alert("no real word rhymes with orange");
+        console.log("no real word rhymes with orange");
+        break;
+    case "yellow":
+        alert("yellow like the sun");
+        console.log("yellow like the sun");
+        break;
+    case "green":
+        alert("I have green hair");
+        console.log("I have green hair");
+        break;
+    case "indigo":
+        alert("indigo as the night sky");
+        console.log("indigo as the night sky");
+        break;
+    case "violet":
+        alert("violet is the best color");
+        console.log("violet is the best color");
+        break;
+    default:
+        alert("I don't know much about " + color);
+        console.log("I don't know much about " + color);
+        break;
+}
+
+
+
 /**
  * TODO:
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message everytime you refresh the page
  */
+
+function randomColor(){
+    return randomColor;
+}
+console.log(randomColor);
 
 /**
  * TODO:
@@ -92,3 +163,5 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  */
 // Generate a random number between 0 and 6
 // var luckyNumber = Math.floor(Math.random() * 6);
+
+// })()

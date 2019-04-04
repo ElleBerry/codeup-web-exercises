@@ -47,10 +47,10 @@ var membership = confirm("Are you a premium member?");
 
 var couponStatus = (membership || Number(numberOfItems) > 2) && offerExpiration;
 
-
-
-
 alert("Can customer use this offer?" + couponStatus);
+
+
+
 var classSize = confirm( "Is the class full? If not, click cancel.");
 var classSchedule = confrim("Does this class conflict with your current schedule? If not, click cancel.");
 var enrollmentStatus = !(!classSize && !classSchedule);
