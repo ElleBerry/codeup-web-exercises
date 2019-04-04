@@ -1,3 +1,4 @@
+(function() {
 "use strict";
 
 /**
@@ -9,6 +10,14 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 
+var name = "Elle!";
+function sayHello() {
+
+    return "Hello " + name;
+}
+
+console.log(sayHello());
+
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -17,12 +26,18 @@
  * console.log 'helloMessage' to check your work
  */
 
+ var helloMessage = sayHello("Elle")
+console.log(helloMessage)
+
 /**
  * TODO:
  * Store your name as a string in a variable named 'myName', and pass that
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+
+var myName = "Elle";
+console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -45,6 +60,10 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
+function isTwo(num) {
+    return num === 2;
+}
+console.log(isTwo(random))
 
 /**
  * TODO:
@@ -58,12 +77,22 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
 
+var percentage = prompt("What percentage would you like to tip?");
+var bill = prompt("How much was the bill?");
+
+function calculateTip(percentage, total){
+    return percentage/100 * total;
+}
+
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+
+alert("You should tip " + "$" + calculateTip(percentage, bill));
 
 /**
  * TODO:
@@ -79,3 +108,14 @@ var random = Math.floor((Math.random() * 3) + 1);
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+
+var originalPrice = 100;
+var discountPercent = .2;
+
+function applyDiscount(initial, percent){
+    return initial - (initial * percent);
+}
+
+console.log(applyDiscount(originalPrice, discountPercent));
+
+})()
