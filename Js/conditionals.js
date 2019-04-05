@@ -23,7 +23,7 @@
   answer = confirm("Would you like to enter a number?");
 
     if(answer === true) {
-        num = prompt("Enter Number:");
+        num = parseInt(prompt("Enter Number:"));
 
             if (num % 2 === 0) {
                 alert("This is an even number.");
@@ -34,6 +34,9 @@
     else {
             alert("Number Not Entered!");
         }
+
+
+
     if(num > 0){
         alert("This number is positive!");
     }
@@ -154,9 +157,41 @@ console.log(randomColor);
  * return value.
  */
 
-function calculateTotal(){
-
+function calculateTotal(luckyNUmber, total){
+    var finalTotal;
+    total = parseFloat(total);
+    switch(lukcyNumber){
+        switch(parseInt(luckyNumber)){
+        case 0:
+                finalTotal = total;
+                break;
+        case 1:
+            finalTotal = total - (total * .10);
+            break;
+        case 2:
+            finalTotal = total - (total * .25);
+            break;
+        case 3:
+            finalTotal = total - (total * .35);
+            break;
+        case 4:
+            finalTotal = total - (total * .50);
+            break;
+        case 5:
+            finalTotal = 0;
+            break;
+        default: finalTotal = total;
+        break;
+        }
+        return finalTotal;
+    }
 }
+var discountedTotal = calculatedTotal(luckyNumber0, total125);
+    console.log(discountedTotal);
+var discountedTotal = calculatedTotal(luckyNumber3, total125);
+console.log(discountedTotal);
+var discountedTotal = calculatedTotal(luckyNumber5, total125);
+console.log(discountedTotal);
 
 /**
  * TODO:
@@ -165,7 +200,17 @@ function calculateTotal(){
  * and alerts to display to the user what their lucky number was, what their
  * price before the discount was, and what their price after the discount is.
  */
-// Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
+// Generate a random number between 0 and 5
+var luckyNumber = Math.floor(Math.random() * 5 +1;
+
+function promptForTotal(luckyNumber){
+
+    var promptedtotal = prompt("what is your total?");
+var discountTotal = calculateTotal(luckyNumber, promptedTotal);
+
+alert("Your total before discount was 4" + promptedTotal + ", but your drew number " + luckyNumber + ", so you pay $" + disocuntTotal + "!");
+}
+promptForTotal(luckyNumber);
+
 
 // })()
