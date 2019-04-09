@@ -20,11 +20,11 @@ while (x <= 10){
 };
 
 do {
-   console.log("The number is " + x)
+   console.log("The number is " + x);
     x++;
 } while (x <= 25);
 
-var i = 100
+var i = 100;
 
 do{
     console.log(i);
