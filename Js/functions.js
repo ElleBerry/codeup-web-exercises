@@ -26,8 +26,8 @@ console.log(sayHello());
  * console.log 'helloMessage' to check your work
  */
 
- var helloMessage = sayHello("Elle")
-console.log(helloMessage)
+ var helloMessage = sayHello("Elle");
+console.log(helloMessage);
 
 /**
  * TODO:
@@ -63,7 +63,7 @@ var random = Math.floor((Math.random() * 3) + 1);
 function isTwo(num) {
     return num === 2;
 }
-console.log(isTwo(random))
+console.log(isTwo(random));
 
 /**
  * TODO:

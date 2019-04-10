@@ -52,7 +52,7 @@ alert("Can customer use this offer?" + couponStatus);
 
 
 var classSize = confirm( "Is the class full? If not, click cancel.");
-var classSchedule = confrim("Does this class conflict with your current schedule? If not, click cancel.");
+var classSchedule = confirm("Does this class conflict with your current schedule? If not, click cancel.");
 var enrollmentStatus = !(!classSize && !classSchedule);
 
 alert("Enrollment Status:" + enrollmentStatus);
