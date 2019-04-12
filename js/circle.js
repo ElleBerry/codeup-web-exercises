@@ -14,8 +14,8 @@
         },
 
         logInfo: function (doRounding) {
-            if(doROunding === true){
-                return Math.round(doRounding);
+            if(doROunding){
+                return Math.round(this ger area);
             }else {
                 return area;
             }
@@ -25,7 +25,7 @@
             // Otherwise, output the complete value
         }
     };
-    console.log("Area of a circle with radius: " + this.radius + ", is: " + this.area);
+    console.log("Area of a circle with radius: " + this.radius + ", is: " + area);
 
 
     // log info about the circle
