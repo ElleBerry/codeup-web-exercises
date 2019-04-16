@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="js/keys.js"></script>
+    <script src="js/mapbox-geocoder-utils.js"></script>
+    <title>MapBox API Exercise</title>
+</head>
+<body>
+
+    <div  id='map' style='width: 900px; height: 750px;'></div>
+
+    <script>
+
+        mapboxgl.accessToken = mapboxKey;
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v10',
+            zoom: 1,
+        });
+
+        geocode("18318 Sonterra Pl, San Antonio, TX 78258", mapboxKey).then(function(result){
+            console.log(result);
+            map.setCenter(result);
+            map.setZoom(5);
+        });
+
+        var marker = new mapboxgl.Marker(map)
+            .setLngLat([-98.497925, 29.610431])
+            .addTo(map)
+
+        var popup = new mapboxgl.Popup()
+            .setHTML("<p>Chama Gaucha</p>")
+            .addTo(map);
+
+        marker.setPopup(popup);
+
+    </script>
+
+
+</body>
+</html>

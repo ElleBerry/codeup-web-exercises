@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="js/keys.js"></script>
+
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Mapbox API</h1>
+
+
+    <div id='map' style='width: 500px; height: 400px; zoom: 2;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZWxsZS1iZXJyeSIsImEiOiJjanVpdzJ1d2MwMGVxNGRzN2E2YnVoOGJ3In0._xluJbYLFXm_AMXXXWr9_w';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/satellite-v9',
+        })
+        var marker = new mapboxgl.Marker(map)
+            .setLngLat([-77.0502, 38.8893])
+            .addTo(map)
+
+</body>
+</html>

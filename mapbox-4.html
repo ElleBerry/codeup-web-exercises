@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <script src="js/keys.js"></script>
+    <script src="js/mapbox-geocoder-utils.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <h1>Mapbox API</h1>
+
+
+    <div id='map' style='width: 500px; height: 400px;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZWxsZS1iZXJyeSIsImEiOiJjanVpdzJ1d2MwMGVxNGRzN2E2YnVoOGJ3In0._xluJbYLFXm_AMXXXWr9_w';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/satellite-v9',
+            zoom: 2,
+            center: [-98.4936, 29.4241]
+        });
+
+
+        geocode("Zion National Park", mapboxKey).then(function(result){
+            console.log(result);
+            map.setCenter(result);
+            map.setZoom(20);
+        });
+
+        reverseGeocode({lng:-157.8583, lat:21.3069,}, mapboxKey).then(function(result){
+            console.log(result);
+        });
+
+    </script>
+</body>
+</html>
