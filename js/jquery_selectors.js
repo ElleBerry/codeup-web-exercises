@@ -13,15 +13,16 @@ $('h1').click(function() {
     $(this).css("background-color", "skyblue");
 });
 
-$('p').dblclick(function(e){
+$('p').dblclick(function(){
     $('p').css('font-size', '18px');
 })
 
 $('li').hover(
     function(){
-        $('li').css('color', 'red');
+        $(this).css('color', 'red');
     },
     function(){
-        $('li').css('color', 'black');
+        $(this).css('color', 'black');
     }
     );
+
