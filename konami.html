@@ -22,8 +22,15 @@
         }
         function konamifun(){
             alert('We are the legacy of 15 billion years of cosmic evolution. We have a choice. We can enhance life and come to know the universe that made us, or we can squander our 15 billion year heritage in meaningless self-destruction. What happens in the first second of the next cosmic year depends on what we do, here and now, with our intelligence, and our knowledge of the cosmos. —Carl Sagan');
+            var password = prompt('Please Enter Password:');
         }
 
+        function cont(){
+            if(password === "croatoan"){
+                $(window).top.close();
+            }
+            return;
+        }
 
         var Konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
         var keyArr=[];
