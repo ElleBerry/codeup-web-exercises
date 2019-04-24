@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    color: black;
+}
+dt{
+    size: 20px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+
+}
+dd{
+    size: 16px;
+}
+li{
+    list-style: none;
+}
+h1{
+    size: 25px;
+}
+h3, li{
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.invisible{
+    visibility: hidden;
+}

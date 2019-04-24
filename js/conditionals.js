@@ -162,7 +162,7 @@ function calculateTotal(luckyNUmber, total){
     total = parseFloat(total);
     switch(lukcyNumber){
         switch(parseInt(luckyNumber)){
-        case 0:
+            case 0:
                 finalTotal = total;
                 break;
         case 1:
