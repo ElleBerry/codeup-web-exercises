@@ -4,3 +4,6 @@ $(document).ready(function() {
         $('dd').toggleClass('invisible');
     });
 });
+
+
+$('li').last().css('background-color', '#FF0');
