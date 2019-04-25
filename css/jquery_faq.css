@@ -31,6 +31,12 @@ h3, li{
 .invisible{
     visibility: hidden;
 }
+.hide{
+    display:none ;
+}
 .yellowbg{
     background-color: yellow;
+}
+#register{
+    display: none;
 }

@@ -11,7 +11,9 @@ $(document).ready(function() {
     });
 
     $('h3').click(function(e) {
-        $(this).next().children().css('font-weight', 'bold');
+        $(this).next().children()
+            .css('font-weight', 'bold')
+            $('ul').slideToggle();
     });
 
     $('li').click(function(e) {
@@ -19,14 +21,17 @@ $(document).ready(function() {
     });
 
     $('span').click(function(e){
-        $('div').hide();
+        $('#newsletter').hide();
     });
 
-    $('.toggle').click(function() {
-        $('ul').each(function(e) {
-            $(this).children().slideToggle().css('visibility', 'visible');
-        })
-    });
+    // $('.toggle').click(function() {
+    //     $('ul').each(function(e) {
+    //         $(this).children().slideToggle().css('display', 'contents');
+    //     })
+    // });
+
+    $('#register').delay(8000).fadeIn();
+
 
 });
 
