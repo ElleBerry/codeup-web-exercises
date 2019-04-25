@@ -17,5 +17,16 @@ $(document).ready(function() {
     $('li').click(function(e) {
         $('ul').parent().children().first().css('color', 'blue');
     });
+
+    $('span').click(function(e){
+        $('div').hide();
+    });
+
+    $('.toggle').click(function() {
+        $('ul').each(function(e) {
+            $(this).children().slideToggle().css('visibility', 'visible');
+        })
+    });
+
 });
 

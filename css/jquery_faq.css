@@ -20,6 +20,14 @@ h1{
 h3, li{
     font-family: 'Open Sans Condensed', sans-serif;
 }
+.schwifty{
+    font-family: 'Bungee', cursive;
+    font-weight: bold;
+}
+.fast{
+    font-family: 'Faster One', cursive;
+    color: #ff5427;
+}
 .invisible{
     visibility: hidden;
 }
