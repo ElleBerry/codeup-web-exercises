@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    background-image: url("../img/daisy-big-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: lightgoldenrodyellow;
+    font-weight: bold;
+}
+h1{
+    color: lightpink;
+    background: rgba(127, 255, 0, 0.61);
+    font-family: 'Pacifico', cursive;
+    padding: 8px;
+    border-radius: 35em;
+}
+p{
+    font-size: 25px;
+}
+textarea{
+    background-color: rgba(229, 182, 255, 0.85);
+    font-family: 'Homemade Apple', cursive;
+    color: whitesmoke;
+    border-style: ridge;
+    border-radius: 15px;
+    width: 25em;
+    height: 15em;
+    text-align: center;
+}

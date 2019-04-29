@@ -2,35 +2,75 @@
 <html>
 <head>
     <title>Online Store</title>
+    <link rel="stylesheet" href="css/ajax-inventory.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Fondamento|Homemade+Apple|Pacifico|Schoolbell" rel="stylesheet">
+
+
 </head>
 <body>
 
 <h1>My Tool Store</h1>
+<p>My brain can only process css right now. :)</p>
 
-<table id="products">
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Quantity</th>
-            <th>Price</th>
-            <th>Categories</th>
-        </tr>
-    </thead>
-    <tbody id="insertProducts"></tbody>
-</table>
+<textarea placeholder="Pretty Tools"></textarea>
+<!--<table id="products">-->
+    <!--<thead>-->
+        <!--<tr>-->
+            <!--<th>Title</th>-->
+            <!--<th>Quantity</th>-->
+            <!--<th>Price</th>-->
+            <!--<th>Categories</th>-->
+        <!--</tr>-->
+    <!--</thead>-->
+    <!--<tbody id="insertProducts"></tbody>-->
+<!--</table>-->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-<script>
-(function() {
-    "use strict";
-    // TODO: Create an ajax GET request for /data/inventory.json
 
+<script>
+     "use strict";
+
+     // (function toolsHtml(tools) {
+     //    var html = '';
+     //
+     //    orders.forEach(function(data){
+     //        html += '<table id="products">';
+     //        html += '<thead>';
+     //        html += '<tr>';
+     //        html += '<th>Title</th>';
+     //        html += '<th>Quantity</th>';
+     //        html += '<th>Price</th>';
+     //        html += '<th>Categories</th>';
+     //        html += '</tr>';
+     //        html += '</thead>';
+     //        html += '<tbody id="insertProducts"></tbody>';
+     //        html += '</table>';
+     //    })
+     //
+     //     $.get("data/inventory.json").done(function(tools){
+     //         $('#insertProducts').html(toolsHtml(tools));
+     //         console.log("YUH!");
+     //     }).fail(function(){
+     //         console.log("FAILURE!");
+     //     })
+     // })();
+
+
+
+    // <tr>
+    //     <th>Title</th>
+    //     <th>Quantity</th>
+    //     <th>Price</th>
+    //     <th>Categories</th>
+    //     </tr>
+
+     // TODO: Create an ajax GET request for /data/inventory.json
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
     //       HINT: You will want to target #insertProducts for your new HTML elements
-})();
+
 </script>
 
 </body>
