@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <title>Konami Code</title>
     <link rel="stylesheet" href="css/konami.css">
+    <link href="https://fonts.googleapis.com/css?family=Meddon|Qwigley|Seaweed+Script" rel="stylesheet">
+
+
+
 </head>
 <body>
-    <h1>Konami Code</h1>
-    <iframe id="puppy" width="560" height="315" src="https://www.youtube.com/embed/91IGOM4tIWo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h1>Jesus Christ! Have some couth Ricky!</h1>
+    <iframe id="puppy" width="700" height="450" src="videoplayback.webm" sandbox="allow-same-origin" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script>
@@ -24,23 +28,16 @@
         }
         function konamiFun() {
             alert('We are the legacy of 15 billion years of cosmic evolution. We have a choice. We can enhance life and come to know the universe that made us, or we can squander our 15 billion year heritage in meaningless self-destruction. What happens in the first second of the next cosmic year depends on what we do, here and now, with our intelligence, and our knowledge of the cosmos. —Carl Sagan');
-            var password = prompt('Please Enter Password:');
-        }
 
-        $(password).value = "puppy";
-        function puppyDisplay(){
-            if(password === "puppy"){
-                window.open('https://youtu.be/91IGOM4tIWo')
-            }else{
-                return alert('USER ERROR');
-            }
+            var password = prompt('Please Enter Password:');
+
+                if (password === "puppy") {
+                    $('#puppy').fadeIn();
+                    $('h1').fadeOut();
+                } else {
+                    return alert('USER ERROR');
+                }
         }
-        var password = "puppy";
-        // switch(password){
-        //     case "puppy":
-        //         $('puppy').css('display', 'block');
-        //         break;
-        // }
 
         var Konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
         var kkeyArr=[];

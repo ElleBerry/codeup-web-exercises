@@ -1,3 +1,11 @@
-#puppy{
-    visibility: hidden;
+body{
+    text-align: center;
+    background: yellow;
+}
+#puppy {
+    display: none;
+}
+h1{
+    font-family: 'Meddon', cursive;
+    color: salmon;
 }
