@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map API</title>
+    <link rel="stylesheet" href="css/weather-map.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Weather Application</h1>
+    <h2>San Antonio</h2>
+    <div class="container">
+        <div class="row">
+            <div class="columns">
+
+            </div>
+
+        </div>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="js/keys.js"></script>
+<script>
+    "use strict";
+    var corsUrl = 'https://cors-anywhere.herokuapp.com/';
+    var darkSkyUrl = 'https://api.darksky.net/forecast/539faca261317e3e7a355d3bef861ca2/37.8267,-122.4233';
+
+    var darkSkyApiKey = darkSkyApi;
+    var lat = '29.4241';
+    var lng = '-98.4936';
+
+    $.get(corsUrl + darkSkyUrl + darkSkyApiKey + '/' + lat + ',' + lng).done(function(data){
+        console.log(data);
+
+    });
+</script>
+</body>
+</html>

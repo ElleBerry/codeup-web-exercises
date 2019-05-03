@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="css/ajax-inventory.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Fondamento|Homemade+Apple|Pacifico|Schoolbell" rel="stylesheet">
 
-
 </head>
 <body>
 
@@ -31,30 +30,30 @@
 <script>
      "use strict";
 
-     // (function toolsHtml(tools) {
-     //    var html = '';
-     //
-     //    orders.forEach(function(data){
-     //        html += '<table id="products">';
-     //        html += '<thead>';
-     //        html += '<tr>';
-     //        html += '<th>Title</th>';
-     //        html += '<th>Quantity</th>';
-     //        html += '<th>Price</th>';
-     //        html += '<th>Categories</th>';
-     //        html += '</tr>';
-     //        html += '</thead>';
-     //        html += '<tbody id="insertProducts"></tbody>';
-     //        html += '</table>';
-     //    })
-     //
-     //     $.get("data/inventory.json").done(function(tools){
-     //         $('#insertProducts').html(toolsHtml(tools));
-     //         console.log("YUH!");
-     //     }).fail(function(){
-     //         console.log("FAILURE!");
-     //     })
-     // })();
+     (function toolsHtml(tools) {
+        var html = '';
+
+        orders.forEach(function(data){
+            html += '<table id="products">';
+            html += '<thead>';
+            html += '<tr>';
+            html += '<th>Title ' + data.title + '</th>';
+            html += '<th>Quantity ' + data.quantity + '</th>';
+            html += '<th>Price ' + data.price + '</th>';
+            html += '<th>Categories ' + data.catagories + '</th>';
+            html += '</tr>';
+            html += '</thead>';
+            html += '<tbody id="insertProducts" class="table-dark"></tbody>';
+            html += '</table>';
+        });
+
+         $.get("data/inventory.json").done(function(tools){
+             $('#insertProducts').html(toolsHtml(tools));
+             console.log("YUH!");
+         }).fail(function(){
+             console.log("FAILURE!");
+         })
+     })();
 
 
 

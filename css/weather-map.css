@@ -1,0 +1,14 @@
+body{
+    background-color: #a1dbff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+h1{
+    font-family: 'Anton', sans-serif;
+}
+.columns{
+    background-color: darkgray;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
